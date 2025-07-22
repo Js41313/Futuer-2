@@ -3,9 +3,9 @@ package smsbao
 import (
 	"fmt"
 
+	"github.com/Js41313/Futuer-2/pkg/templatex"
+	"github.com/Js41313/Futuer-2/pkg/tool"
 	"github.com/go-resty/resty/v2"
-	"github.com/perfect-panel/server/pkg/templatex"
-	"github.com/perfect-panel/server/pkg/tool"
 )
 
 const BaseURL = "https://api.smsbao.com"

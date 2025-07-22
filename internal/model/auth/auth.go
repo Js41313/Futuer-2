@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/perfect-panel/server/pkg/email"
+	"github.com/Js41313/Futuer-2/pkg/email"
 )
 
 type Auth struct {

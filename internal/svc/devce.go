@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/perfect-panel/server/internal/config"
-	"github.com/perfect-panel/server/internal/model/user"
+	"github.com/Js41313/Futuer-2/internal/config"
+	"github.com/Js41313/Futuer-2/internal/model/user"
 
-	"github.com/perfect-panel/server/pkg/device"
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/device"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 	"github.com/pkg/errors"
 	"gorm.io/gorm"
 )

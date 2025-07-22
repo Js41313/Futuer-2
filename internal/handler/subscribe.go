@@ -1,10 +1,10 @@
 package handler
 
 import (
+	"github.com/Js41313/Futuer-2/internal/logic/subscribe"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/internal/types"
 	"github.com/gin-gonic/gin"
-	"github.com/perfect-panel/server/internal/logic/subscribe"
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/internal/types"
 )
 
 func SubscribeHandler(svcCtx *svc.ServiceContext) func(c *gin.Context) {

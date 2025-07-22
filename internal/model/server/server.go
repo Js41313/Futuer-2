@@ -3,7 +3,7 @@ package server
 import (
 	"time"
 
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 
 	"gorm.io/gorm"
 )

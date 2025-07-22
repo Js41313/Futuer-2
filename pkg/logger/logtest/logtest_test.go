@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -10,14 +10,14 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/perfect-panel/server/pkg/logger"
-	"github.com/perfect-panel/server/pkg/result"
-	"github.com/perfect-panel/server/pkg/xerr"
+	"github.com/Js41313/Futuer-2/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/result"
+	"github.com/Js41313/Futuer-2/pkg/xerr"
 	"github.com/pkg/errors"
 
+	"github.com/Js41313/Futuer-2/internal/svc"
+	pkgaes "github.com/Js41313/Futuer-2/pkg/aes"
 	"github.com/gin-gonic/gin"
-	"github.com/perfect-panel/server/internal/svc"
-	pkgaes "github.com/perfect-panel/server/pkg/aes"
 )
 
 const (

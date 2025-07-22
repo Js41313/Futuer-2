@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/perfect-panel/server/internal/model/payment"
+	"github.com/Js41313/Futuer-2/internal/model/payment"
 
-	"github.com/perfect-panel/server/internal/model/subscribe"
+	"github.com/Js41313/Futuer-2/internal/model/subscribe"
 	"github.com/redis/go-redis/v9"
 	"gorm.io/gorm"
 )

@@ -8,10 +8,10 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/perfect-panel/server/pkg/adapter/proxy"
-	"github.com/perfect-panel/server/pkg/logger"
-	"github.com/perfect-panel/server/pkg/tool"
-	"github.com/perfect-panel/server/pkg/traffic"
+	"github.com/Js41313/Futuer-2/pkg/adapter/proxy"
+	"github.com/Js41313/Futuer-2/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/tool"
+	"github.com/Js41313/Futuer-2/pkg/traffic"
 )
 
 //go:embed *.tpl

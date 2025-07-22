@@ -1,7 +1,7 @@
 package initialize
 
 import (
-	"github.com/perfect-panel/server/internal/svc"
+	"github.com/Js41313/Futuer-2/internal/svc"
 )
 
 func StartInitSystemConfig(svc *svc.ServiceContext) {

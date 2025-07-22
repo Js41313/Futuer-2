@@ -7,7 +7,7 @@ import (
 
 	"github.com/stripe/stripe-go/v81/webhookendpoint"
 
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 	"github.com/stripe/stripe-go/v81"
 	"github.com/stripe/stripe-go/v81/customer"
 	"github.com/stripe/stripe-go/v81/ephemeralkey"

@@ -10,7 +10,7 @@ import (
 	"github.com/jinzhu/copier"
 	"github.com/pkg/errors"
 
-	"github.com/perfect-panel/server/pkg/constant"
+	"github.com/Js41313/Futuer-2/pkg/constant"
 )
 
 // CopyOption 定义复制选项的函数类型

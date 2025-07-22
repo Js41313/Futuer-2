@@ -1,8 +1,8 @@
 package v2rayn
 
 import (
-	"github.com/perfect-panel/server/pkg/adapter/general"
-	"github.com/perfect-panel/server/pkg/adapter/proxy"
+	"github.com/Js41313/Futuer-2/pkg/adapter/general"
+	"github.com/Js41313/Futuer-2/pkg/adapter/proxy"
 )
 
 type v2rayShareLink struct {

@@ -21,7 +21,7 @@ COPY . .
 
 # Build the binary with version and build time
 RUN BUILD_TIME=$(date -u +"%Y-%m-%dT%H:%M:%SZ") && \
-    go build -ldflags="-s -w -X 'github.com/perfect-panel/server/pkg/constant.Version=${VERSION}' -X 'github.com/perfect-panel/server/pkg/constant.BuildTime=${BUILD_TIME}'" -o /app/ppanel ppanel.go
+    go build -ldflags="-s -w -X 'github.com/Js41313/Futuer-2/pkg/constant.Version=${VERSION}' -X 'github.com/Js41313/Futuer-2/pkg/constant.BuildTime=${BUILD_TIME}'" -o /app/ppanel ppanel.go
 
 # Final minimal image
 FROM scratch

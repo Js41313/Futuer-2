@@ -3,8 +3,8 @@ package syncx
 import (
 	"time"
 
-	"github.com/perfect-panel/server/pkg/lang"
-	"github.com/perfect-panel/server/pkg/timex"
+	"github.com/Js41313/Futuer-2/pkg/lang"
+	"github.com/Js41313/Futuer-2/pkg/timex"
 )
 
 // A Cond is used to wait for conditions.

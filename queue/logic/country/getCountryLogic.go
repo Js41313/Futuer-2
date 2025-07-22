@@ -4,12 +4,12 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/pkg/ip"
+	"github.com/Js41313/Futuer-2/queue/types"
 	"github.com/hibiken/asynq"
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/pkg/ip"
-	"github.com/perfect-panel/server/queue/types"
 )
 
 type GetNodeCountryLogic struct {

@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"strconv"
 
+	"github.com/Js41313/Futuer-2/internal/model/system"
 	"github.com/goccy/go-json"
-	"github.com/perfect-panel/server/internal/model/system"
 )
 
 func SystemConfigSliceReflectToStruct(slice []*system.System, structType any) {

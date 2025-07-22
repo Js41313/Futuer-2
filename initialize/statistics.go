@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/perfect-panel/server/internal/model/cache"
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/internal/model/cache"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 )
 
 func TrafficDataToRedis(svcCtx *svc.ServiceContext) {

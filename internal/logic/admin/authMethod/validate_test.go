@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/perfect-panel/server/pkg/sms"
+	"github.com/Js41313/Futuer-2/pkg/sms"
 )
 
 func TestValidate(t *testing.T) {

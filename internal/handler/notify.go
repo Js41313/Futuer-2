@@ -1,10 +1,10 @@
 package handler
 
 import (
+	"github.com/Js41313/Futuer-2/internal/handler/notify"
+	"github.com/Js41313/Futuer-2/internal/middleware"
+	"github.com/Js41313/Futuer-2/internal/svc"
 	"github.com/gin-gonic/gin"
-	"github.com/perfect-panel/server/internal/handler/notify"
-	"github.com/perfect-panel/server/internal/middleware"
-	"github.com/perfect-panel/server/internal/svc"
 )
 
 func RegisterNotifyHandlers(router *gin.Engine, serverCtx *svc.ServiceContext) {

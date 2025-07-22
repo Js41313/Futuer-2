@@ -4,14 +4,14 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 
+	"github.com/Js41313/Futuer-2/internal/config"
+	"github.com/Js41313/Futuer-2/internal/logic/telegram"
+	"github.com/Js41313/Futuer-2/internal/model/auth"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/pkg/tool"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
-	"github.com/perfect-panel/server/internal/config"
-	"github.com/perfect-panel/server/internal/logic/telegram"
-	"github.com/perfect-panel/server/internal/model/auth"
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/pkg/tool"
 )
 
 func Telegram(svc *svc.ServiceContext) {

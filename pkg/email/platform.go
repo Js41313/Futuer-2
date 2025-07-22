@@ -1,6 +1,6 @@
 package email
 
-import "github.com/perfect-panel/server/internal/types"
+import "github.com/Js41313/Futuer-2/internal/types"
 
 type Platform int
 

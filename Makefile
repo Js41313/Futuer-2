@@ -2,8 +2,8 @@ NAME="ppanel-server"
 BINDIR=bin
 VERSION=$(shell git describe --tags || echo "unknown version")
 BUILDTIME=$(shell date -u)
-GOBUILD=CGO_ENABLED=0 go build -trimpath -ldflags '-X "github.com/perfect-panel/server/pkg/constant.Version=$(VERSION)" \
-		-X "github.com/perfect-panel/server/pkg/constant.BuildTime=$(BUILDTIME)" \
+GOBUILD=CGO_ENABLED=0 go build -trimpath -ldflags '-X "github.com/Js41313/Futuer-2/pkg/constant.Version=$(VERSION)" \
+		-X "github.com/Js41313/Futuer-2/pkg/constant.BuildTime=$(BUILDTIME)" \
 		-w -s -buildid='
 
 PLATFORM_LIST = \

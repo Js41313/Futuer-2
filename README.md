@@ -4,13 +4,13 @@
 
 [![License](https://img.shields.io/github/license/perfect-panel/server)](LICENSE)
 [![Go Version](https://img.shields.io/badge/Go-1.21%2B-blue)](https://go.dev/)
-[![Go Report Card](https://goreportcard.com/badge/github.com/perfect-panel/server)](https://goreportcard.com/report/github.com/perfect-panel/server)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Js41313/Futuer-2)](https://goreportcard.com/report/github.com/Js41313/Futuer-2)
 [![Docker](https://img.shields.io/badge/Docker-Available-blue)](Dockerfile)
 [![CI/CD](https://img.shields.io/github/actions/workflow/status/perfect-panel/server/release.yml)](.github/workflows/release.yml)
 
 **PPanel is a pure, professional, and perfect open-source proxy panel tool, designed for learning and practical use.**
 
-[English](README.md) | [中文](readme_zh.md) | [Report Bug](https://github.com/perfect-panel/server/issues/new) | [Request Feature](https://github.com/perfect-panel/server/issues/new)
+[English](README.md) | [中文](readme_zh.md) | [Report Bug](https://github.com/Js41313/Futuer-2/issues/new) | [Request Feature](https://github.com/Js41313/Futuer-2/issues/new)
 
 </div>
 

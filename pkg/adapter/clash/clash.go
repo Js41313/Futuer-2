@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"text/template"
 
+	"github.com/Js41313/Futuer-2/pkg/adapter/proxy"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 	"github.com/Masterminds/sprig/v3"
-	"github.com/perfect-panel/server/pkg/adapter/proxy"
-	"github.com/perfect-panel/server/pkg/logger"
 	"gopkg.in/yaml.v3"
 )
 

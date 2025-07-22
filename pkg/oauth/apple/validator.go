@@ -48,8 +48,7 @@ type Client struct {
 type ClientOptions struct {
 	validationURL string
 	revokeURL     string
-	//nolint:unused
-	secret string
+
 	client *http.Client
 }
 

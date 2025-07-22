@@ -3,8 +3,8 @@ package service
 import (
 	"sync"
 
-	"github.com/perfect-panel/server/pkg/proc"
-	"github.com/perfect-panel/server/pkg/threading"
+	"github.com/Js41313/Futuer-2/pkg/proc"
+	"github.com/Js41313/Futuer-2/pkg/threading"
 )
 
 type (

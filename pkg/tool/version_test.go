@@ -3,7 +3,7 @@ package tool
 import (
 	"testing"
 
-	"github.com/perfect-panel/server/pkg/constant"
+	"github.com/Js41313/Futuer-2/pkg/constant"
 )
 
 func TestExtractVersionNumber(t *testing.T) {

@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/perfect-panel/server/internal/config"
+	"github.com/Js41313/Futuer-2/internal/config"
 
-	"github.com/perfect-panel/server/pkg/cache"
+	"github.com/Js41313/Futuer-2/pkg/cache"
 	"github.com/redis/go-redis/v9"
 	"gorm.io/gorm"
 )

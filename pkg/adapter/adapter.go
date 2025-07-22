@@ -3,17 +3,17 @@ package adapter
 import (
 	"embed"
 
-	"github.com/perfect-panel/server/internal/model/server"
-	"github.com/perfect-panel/server/pkg/adapter/clash"
-	"github.com/perfect-panel/server/pkg/adapter/general"
-	"github.com/perfect-panel/server/pkg/adapter/loon"
-	"github.com/perfect-panel/server/pkg/adapter/proxy"
-	"github.com/perfect-panel/server/pkg/adapter/quantumultx"
-	"github.com/perfect-panel/server/pkg/adapter/shadowrocket"
-	"github.com/perfect-panel/server/pkg/adapter/singbox"
-	"github.com/perfect-panel/server/pkg/adapter/surfboard"
-	"github.com/perfect-panel/server/pkg/adapter/surge"
-	"github.com/perfect-panel/server/pkg/adapter/v2rayn"
+	"github.com/Js41313/Futuer-2/internal/model/server"
+	"github.com/Js41313/Futuer-2/pkg/adapter/clash"
+	"github.com/Js41313/Futuer-2/pkg/adapter/general"
+	"github.com/Js41313/Futuer-2/pkg/adapter/loon"
+	"github.com/Js41313/Futuer-2/pkg/adapter/proxy"
+	"github.com/Js41313/Futuer-2/pkg/adapter/quantumultx"
+	"github.com/Js41313/Futuer-2/pkg/adapter/shadowrocket"
+	"github.com/Js41313/Futuer-2/pkg/adapter/singbox"
+	"github.com/Js41313/Futuer-2/pkg/adapter/surfboard"
+	"github.com/Js41313/Futuer-2/pkg/adapter/surge"
+	"github.com/Js41313/Futuer-2/pkg/adapter/v2rayn"
 )
 
 //go:embed template/*

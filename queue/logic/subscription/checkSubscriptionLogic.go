@@ -7,13 +7,13 @@ import (
 	"text/template"
 	"time"
 
-	queue "github.com/perfect-panel/server/queue/types"
+	queue "github.com/Js41313/Futuer-2/queue/types"
 
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 
+	"github.com/Js41313/Futuer-2/internal/model/user"
+	"github.com/Js41313/Futuer-2/internal/svc"
 	"github.com/hibiken/asynq"
-	"github.com/perfect-panel/server/internal/model/user"
-	"github.com/perfect-panel/server/internal/svc"
 	"gorm.io/gorm"
 )
 

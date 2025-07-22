@@ -6,21 +6,21 @@ import (
 	"strings"
 	"time"
 
-	"github.com/perfect-panel/server/pkg/adapter"
-	"github.com/perfect-panel/server/pkg/adapter/shadowrocket"
-	"github.com/perfect-panel/server/pkg/adapter/surfboard"
-	"github.com/perfect-panel/server/pkg/adapter/surge"
+	"github.com/Js41313/Futuer-2/pkg/adapter"
+	"github.com/Js41313/Futuer-2/pkg/adapter/shadowrocket"
+	"github.com/Js41313/Futuer-2/pkg/adapter/surfboard"
+	"github.com/Js41313/Futuer-2/pkg/adapter/surge"
 
-	"github.com/perfect-panel/server/internal/model/server"
+	"github.com/Js41313/Futuer-2/internal/model/server"
 
-	"github.com/perfect-panel/server/internal/model/user"
+	"github.com/Js41313/Futuer-2/internal/model/user"
 
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/internal/types"
+	"github.com/Js41313/Futuer-2/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/tool"
+	"github.com/Js41313/Futuer-2/pkg/xerr"
 	"github.com/gin-gonic/gin"
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/internal/types"
-	"github.com/perfect-panel/server/pkg/logger"
-	"github.com/perfect-panel/server/pkg/tool"
-	"github.com/perfect-panel/server/pkg/xerr"
 	"github.com/pkg/errors"
 )
 

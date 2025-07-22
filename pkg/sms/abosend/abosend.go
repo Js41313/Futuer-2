@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"fmt"
 
+	"github.com/Js41313/Futuer-2/pkg/random"
+	"github.com/Js41313/Futuer-2/pkg/templatex"
+	"github.com/Js41313/Futuer-2/pkg/tool"
 	"github.com/go-resty/resty/v2"
-	"github.com/perfect-panel/server/pkg/random"
-	"github.com/perfect-panel/server/pkg/templatex"
-	"github.com/perfect-panel/server/pkg/tool"
 )
 
 const BaseURL = "https://smsapi.abosend.com"

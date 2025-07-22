@@ -3,7 +3,7 @@ package migrate
 import (
 	"testing"
 
-	"github.com/perfect-panel/server/pkg/orm"
+	"github.com/Js41313/Futuer-2/pkg/orm"
 )
 
 func getDSN() string {

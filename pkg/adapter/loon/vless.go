@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/perfect-panel/server/pkg/adapter/proxy"
+	"github.com/Js41313/Futuer-2/pkg/adapter/proxy"
 
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 )
 
 func buildVless(data proxy.Proxy, password string) string {

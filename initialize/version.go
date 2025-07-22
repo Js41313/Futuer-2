@@ -3,13 +3,13 @@ package initialize
 import (
 	"errors"
 
-	"github.com/perfect-panel/server/internal/model/user"
+	"github.com/Js41313/Futuer-2/internal/model/user"
 	"gorm.io/gorm"
 
-	"github.com/perfect-panel/server/initialize/migrate"
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/pkg/logger"
-	"github.com/perfect-panel/server/pkg/orm"
+	"github.com/Js41313/Futuer-2/initialize/migrate"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/orm"
 )
 
 func Migrate(ctx *svc.ServiceContext) {

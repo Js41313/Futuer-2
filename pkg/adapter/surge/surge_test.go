@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/perfect-panel/server/pkg/adapter/proxy"
+	"github.com/Js41313/Futuer-2/pkg/adapter/proxy"
 )
 
 func TestSurgeBuild(t *testing.T) {
@@ -74,7 +74,7 @@ func TestSurgeBuild(t *testing.T) {
 	}
 
 	surge := NewSurge(adapter)
-	config := surge.Build("test-uuid", "TestSite", user)
+	config := surge.Build("TestSite", user)
 
 	if config == nil {
 		t.Fatal("Expected non-nil config")

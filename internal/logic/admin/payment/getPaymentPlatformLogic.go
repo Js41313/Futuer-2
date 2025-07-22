@@ -3,10 +3,10 @@ package payment
 import (
 	"context"
 
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/internal/types"
-	"github.com/perfect-panel/server/pkg/logger"
-	"github.com/perfect-panel/server/pkg/payment"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/internal/types"
+	"github.com/Js41313/Futuer-2/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/payment"
 )
 
 type GetPaymentPlatformLogic struct {

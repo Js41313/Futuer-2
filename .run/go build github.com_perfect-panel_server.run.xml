@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="go build github.com/perfect-panel/server" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+  <configuration default="false" name="go build github.com/Js41313/Futuer-2" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
     <module name="server" />
     <working_directory value="$PROJECT_DIR$" />
     <parameters value="run --config etc/ppanel-dev.yaml" />
@@ -7,7 +7,7 @@
       <env name="PPANEL_MODE" value="demo" />
     </envs>
     <kind value="PACKAGE" />
-    <package value="github.com/perfect-panel/server" />
+    <package value="github.com/Js41313/Futuer-2" />
     <directory value="$PROJECT_DIR$" />
     <filePath value="$PROJECT_DIR$/ppanel.go" />
     <method v="2" />

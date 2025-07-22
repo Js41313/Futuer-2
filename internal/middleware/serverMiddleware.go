@@ -1,8 +1,8 @@
 package middleware
 
 import (
+	"github.com/Js41313/Futuer-2/internal/svc"
 	"github.com/gin-gonic/gin"
-	"github.com/perfect-panel/server/internal/svc"
 )
 
 func ServerMiddleware(svc *svc.ServiceContext) func(c *gin.Context) {

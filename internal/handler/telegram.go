@@ -1,13 +1,13 @@
 package handler
 
 import (
+	"github.com/Js41313/Futuer-2/internal/logic/telegram"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/result"
+	"github.com/Js41313/Futuer-2/pkg/tool"
 	"github.com/gin-gonic/gin"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
-	"github.com/perfect-panel/server/internal/logic/telegram"
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/pkg/logger"
-	"github.com/perfect-panel/server/pkg/result"
-	"github.com/perfect-panel/server/pkg/tool"
 )
 
 func RegisterTelegramHandlers(router *gin.Engine, serverCtx *svc.ServiceContext) {

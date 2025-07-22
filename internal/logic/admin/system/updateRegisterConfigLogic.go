@@ -5,18 +5,18 @@ import (
 
 	"reflect"
 
-	"github.com/perfect-panel/server/initialize"
-	"github.com/perfect-panel/server/internal/config"
-	"github.com/perfect-panel/server/internal/model/system"
-	"github.com/perfect-panel/server/pkg/logger"
-	"github.com/perfect-panel/server/pkg/tool"
-	"github.com/perfect-panel/server/pkg/xerr"
+	"github.com/Js41313/Futuer-2/initialize"
+	"github.com/Js41313/Futuer-2/internal/config"
+	"github.com/Js41313/Futuer-2/internal/model/system"
+	"github.com/Js41313/Futuer-2/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/tool"
+	"github.com/Js41313/Futuer-2/pkg/xerr"
 
 	"github.com/pkg/errors"
 	"gorm.io/gorm"
 
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/internal/types"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/internal/types"
 )
 
 type UpdateRegisterConfigLogic struct {

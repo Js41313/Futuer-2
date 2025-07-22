@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/Js41313/Futuer-2/pkg/random"
 	"github.com/gofrs/uuid/v5"
-	"github.com/perfect-panel/server/pkg/random"
 )
 
 // NewUUID returns a new UUID.

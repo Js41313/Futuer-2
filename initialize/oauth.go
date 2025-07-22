@@ -1,8 +1,8 @@
 package initialize
 
 import (
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 )
 
 func OAuth(svc *svc.ServiceContext) {

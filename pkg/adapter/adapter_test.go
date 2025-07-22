@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/perfect-panel/server/internal/model/server"
-	"github.com/perfect-panel/server/pkg/adapter/surfboard"
+	"github.com/Js41313/Futuer-2/internal/model/server"
+	"github.com/Js41313/Futuer-2/pkg/adapter/surfboard"
 )
 
 func createTestServer() []*server.Server {
@@ -69,7 +69,10 @@ func TestNewAdapter(t *testing.T) {
 		},
 	}
 
-	adapter := NewAdapter(nodes, rules)
+	adapter := NewAdapter(&Config{
+		Nodes: nodes,
+		Rules: rules,
+	})
 	bytes, err := adapter.BuildClash("some-uuid")
 	if err != nil {
 		t.Errorf("Failed to build adapter: %v", err)
@@ -89,7 +92,10 @@ func TestAdapter_BuildSingbox(t *testing.T) {
 		},
 	}
 
-	adapter := NewAdapter(nodes, rules)
+	adapter := NewAdapter(&Config{
+		Nodes: nodes,
+		Rules: rules,
+	})
 	bytes, err := adapter.BuildSingbox("some-uuid")
 	if err != nil {
 		t.Errorf("Failed to build adapter: %v", err)
@@ -120,7 +126,10 @@ func TestAdapter_BuildSurfboard(t *testing.T) {
 			Rules: "DOMAIN-SUFFIX,example.com,Test Rule Group 1",
 		},
 	}
-	adapter := NewAdapter(nodes, rules)
+	adapter := NewAdapter(&Config{
+		Nodes: nodes,
+		Rules: rules,
+	})
 	user := surfboard.UserInfo{
 		UUID:         "some-uuid",
 		Upload:       200,

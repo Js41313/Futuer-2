@@ -8,7 +8,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/perfect-panel/server/pkg/tool"
+	"github.com/Js41313/Futuer-2/pkg/tool"
 )
 
 const (

@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 )
 
 func Int64SliceToStringSlice(slice []int64) []string {

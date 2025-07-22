@@ -3,11 +3,11 @@ package authMethod
 import (
 	"context"
 
-	"github.com/perfect-panel/server/pkg/sms"
+	"github.com/Js41313/Futuer-2/pkg/sms"
 
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/internal/types"
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/internal/types"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 )
 
 type GetSmsPlatformLogic struct {

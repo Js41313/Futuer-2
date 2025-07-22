@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/perfect-panel/server/internal/config"
+	"github.com/Js41313/Futuer-2/internal/config"
 	"gorm.io/gorm"
 )
 

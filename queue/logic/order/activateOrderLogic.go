@@ -7,21 +7,21 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/perfect-panel/server/pkg/constant"
+	"github.com/Js41313/Futuer-2/pkg/constant"
 
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 
+	"github.com/Js41313/Futuer-2/internal/config"
+	"github.com/Js41313/Futuer-2/internal/logic/telegram"
+	"github.com/Js41313/Futuer-2/internal/model/order"
+	"github.com/Js41313/Futuer-2/internal/model/user"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/pkg/tool"
+	"github.com/Js41313/Futuer-2/pkg/uuidx"
+	"github.com/Js41313/Futuer-2/queue/types"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"github.com/google/uuid"
 	"github.com/hibiken/asynq"
-	"github.com/perfect-panel/server/internal/config"
-	"github.com/perfect-panel/server/internal/logic/telegram"
-	"github.com/perfect-panel/server/internal/model/order"
-	"github.com/perfect-panel/server/internal/model/user"
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/pkg/tool"
-	"github.com/perfect-panel/server/pkg/uuidx"
-	"github.com/perfect-panel/server/queue/types"
 	"gorm.io/gorm"
 )
 

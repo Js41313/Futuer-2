@@ -1,8 +1,8 @@
 package svc
 
 import (
-	"github.com/perfect-panel/server/internal/config"
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/internal/config"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 )
 
 func NewLogger(c config.Config) *logger.Logger {

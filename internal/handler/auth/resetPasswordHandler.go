@@ -3,13 +3,13 @@ package auth
 import (
 	"time"
 
+	"github.com/Js41313/Futuer-2/internal/logic/auth"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/internal/types"
+	"github.com/Js41313/Futuer-2/pkg/result"
+	"github.com/Js41313/Futuer-2/pkg/turnstile"
+	"github.com/Js41313/Futuer-2/pkg/xerr"
 	"github.com/gin-gonic/gin"
-	"github.com/perfect-panel/server/internal/logic/auth"
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/internal/types"
-	"github.com/perfect-panel/server/pkg/result"
-	"github.com/perfect-panel/server/pkg/turnstile"
-	"github.com/perfect-panel/server/pkg/xerr"
 	"github.com/pkg/errors"
 )
 

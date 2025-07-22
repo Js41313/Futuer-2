@@ -3,7 +3,7 @@ package quantumultx
 import (
 	"encoding/base64"
 
-	"github.com/perfect-panel/server/pkg/adapter/proxy"
+	"github.com/Js41313/Futuer-2/pkg/adapter/proxy"
 )
 
 func BuildQuantumultX(servers []proxy.Proxy, uuid string) string {

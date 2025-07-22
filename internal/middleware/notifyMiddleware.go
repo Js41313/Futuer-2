@@ -3,10 +3,10 @@ package middleware
 import (
 	"context"
 
-	"github.com/perfect-panel/server/pkg/constant"
+	"github.com/Js41313/Futuer-2/pkg/constant"
 
+	"github.com/Js41313/Futuer-2/internal/svc"
 	"github.com/gin-gonic/gin"
-	"github.com/perfect-panel/server/internal/svc"
 )
 
 type PaymentParams struct {

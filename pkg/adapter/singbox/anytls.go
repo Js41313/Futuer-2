@@ -1,6 +1,6 @@
 package singbox
 
-import "github.com/perfect-panel/server/pkg/adapter/proxy"
+import "github.com/Js41313/Futuer-2/pkg/adapter/proxy"
 
 type AnyTLSOutboundOptions struct {
 	ServerOptions

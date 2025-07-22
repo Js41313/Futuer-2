@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"strconv"
 
-	"github.com/perfect-panel/server/pkg/rescue"
+	"github.com/Js41313/Futuer-2/pkg/rescue"
 )
 
 // GoSafe runs the given fn using another goroutine, recovers if fn panics.

@@ -1,8 +1,8 @@
 package svc
 
 import (
+	"github.com/Js41313/Futuer-2/internal/config"
 	"github.com/hibiken/asynq"
-	"github.com/perfect-panel/server/internal/config"
 )
 
 func NewAsynqClient(c config.Config) *asynq.Client {

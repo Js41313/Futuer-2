@@ -3,7 +3,7 @@ package logger
 import (
 	"errors"
 
-	"github.com/perfect-panel/server/pkg/syncx"
+	"github.com/Js41313/Futuer-2/pkg/syncx"
 )
 
 const (

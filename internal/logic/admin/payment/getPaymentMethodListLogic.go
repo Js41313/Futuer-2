@@ -4,13 +4,13 @@ import (
 	"context"
 	"encoding/json"
 
-	paymentPlatform "github.com/perfect-panel/server/pkg/payment"
+	paymentPlatform "github.com/Js41313/Futuer-2/pkg/payment"
 
-	"github.com/perfect-panel/server/internal/model/payment"
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/internal/types"
-	"github.com/perfect-panel/server/pkg/logger"
-	"github.com/perfect-panel/server/pkg/xerr"
+	"github.com/Js41313/Futuer-2/internal/model/payment"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/internal/types"
+	"github.com/Js41313/Futuer-2/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/xerr"
 	"github.com/pkg/errors"
 )
 

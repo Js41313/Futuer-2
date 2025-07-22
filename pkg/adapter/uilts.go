@@ -5,11 +5,11 @@ import (
 	"log"
 	"strings"
 
-	"github.com/perfect-panel/server/internal/model/server"
-	"github.com/perfect-panel/server/pkg/adapter/proxy"
-	"github.com/perfect-panel/server/pkg/logger"
-	"github.com/perfect-panel/server/pkg/random"
-	"github.com/perfect-panel/server/pkg/tool"
+	"github.com/Js41313/Futuer-2/internal/model/server"
+	"github.com/Js41313/Futuer-2/pkg/adapter/proxy"
+	"github.com/Js41313/Futuer-2/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/random"
+	"github.com/Js41313/Futuer-2/pkg/tool"
 )
 
 // addNode creates a new proxy node based on the provided server data and host/port.

@@ -4,13 +4,13 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 
+	"github.com/Js41313/Futuer-2/internal/logic/public/order"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	internal "github.com/Js41313/Futuer-2/internal/types"
+	"github.com/Js41313/Futuer-2/queue/types"
 	"github.com/hibiken/asynq"
-	"github.com/perfect-panel/server/internal/logic/public/order"
-	"github.com/perfect-panel/server/internal/svc"
-	internal "github.com/perfect-panel/server/internal/types"
-	"github.com/perfect-panel/server/queue/types"
 )
 
 type DeferCloseOrderLogic struct {

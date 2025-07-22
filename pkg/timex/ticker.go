@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/perfect-panel/server/pkg/lang"
+	"github.com/Js41313/Futuer-2/pkg/lang"
 )
 
 // errTimeout indicates a timeout.

@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/perfect-panel/server/pkg/constant"
+	"github.com/Js41313/Futuer-2/pkg/constant"
 
 	"github.com/spf13/cobra"
 )

@@ -4,7 +4,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/perfect-panel/server/pkg/proc"
+	"github.com/Js41313/Futuer-2/pkg/proc"
 
 	"github.com/stretchr/testify/assert"
 )

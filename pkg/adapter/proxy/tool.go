@@ -2,7 +2,8 @@ package proxy
 
 import (
 	"encoding/base64"
-	"github.com/perfect-panel/server/pkg/uuidx"
+
+	"github.com/Js41313/Futuer-2/pkg/uuidx"
 )
 
 func GenerateShadowsocks2022Password(ss Shadowsocks, password string) (string, string) {

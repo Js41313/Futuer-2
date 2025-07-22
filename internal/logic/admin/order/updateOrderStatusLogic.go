@@ -4,15 +4,15 @@ import (
 	"context"
 	"encoding/json"
 
+	"github.com/Js41313/Futuer-2/pkg/xerr"
 	"github.com/hibiken/asynq"
-	"github.com/perfect-panel/server/pkg/xerr"
 	"github.com/pkg/errors"
 	"gorm.io/gorm"
 
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/internal/types"
-	"github.com/perfect-panel/server/pkg/logger"
-	queue "github.com/perfect-panel/server/queue/types"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/internal/types"
+	"github.com/Js41313/Futuer-2/pkg/logger"
+	queue "github.com/Js41313/Futuer-2/queue/types"
 )
 
 type UpdateOrderStatusLogic struct {

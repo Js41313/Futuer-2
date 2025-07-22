@@ -3,8 +3,8 @@ package singbox
 import (
 	"strconv"
 
-	"github.com/perfect-panel/server/pkg/logger"
-	"github.com/perfect-panel/server/pkg/rules"
+	"github.com/Js41313/Futuer-2/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/rules"
 )
 
 type Rule struct {

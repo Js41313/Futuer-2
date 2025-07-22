@@ -4,7 +4,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/perfect-panel/server/pkg/color"
+	"github.com/Js41313/Futuer-2/pkg/color"
 	"github.com/stretchr/testify/assert"
 )
 

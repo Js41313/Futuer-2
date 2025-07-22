@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/perfect-panel/server/pkg/adapter/general"
+	"github.com/Js41313/Futuer-2/pkg/adapter/general"
 
 	"encoding/base64"
 
-	"github.com/perfect-panel/server/pkg/adapter/proxy"
-	"github.com/perfect-panel/server/pkg/traffic"
+	"github.com/Js41313/Futuer-2/pkg/adapter/proxy"
+	"github.com/Js41313/Futuer-2/pkg/traffic"
 )
 
 type UserInfo struct {

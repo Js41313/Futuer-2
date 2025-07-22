@@ -1,4 +1,4 @@
-module github.com/perfect-panel/server
+module github.com/Js41313/Futuer-2
 
 go 1.23.3
 

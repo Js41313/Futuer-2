@@ -3,7 +3,7 @@ package fs
 import (
 	"os"
 
-	"github.com/perfect-panel/server/pkg/hash"
+	"github.com/Js41313/Futuer-2/pkg/hash"
 )
 
 // TempFileWithText creates the temporary file with the given content,

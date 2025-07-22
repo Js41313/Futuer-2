@@ -5,15 +5,15 @@ import (
 	"encoding/json"
 	"strings"
 
+	"github.com/Js41313/Futuer-2/pkg/device"
+	queue "github.com/Js41313/Futuer-2/queue/types"
 	"github.com/hibiken/asynq"
-	"github.com/perfect-panel/server/pkg/device"
-	queue "github.com/perfect-panel/server/queue/types"
 
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/internal/types"
-	"github.com/perfect-panel/server/pkg/logger"
-	"github.com/perfect-panel/server/pkg/tool"
-	"github.com/perfect-panel/server/pkg/xerr"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/internal/types"
+	"github.com/Js41313/Futuer-2/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/tool"
+	"github.com/Js41313/Futuer-2/pkg/xerr"
 	"github.com/pkg/errors"
 )
 

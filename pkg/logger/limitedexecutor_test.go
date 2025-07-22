@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/perfect-panel/server/pkg/timex"
+	"github.com/Js41313/Futuer-2/pkg/timex"
 	"github.com/stretchr/testify/assert"
 )
 

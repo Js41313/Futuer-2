@@ -5,16 +5,16 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/perfect-panel/server/internal/model/auth"
-	"github.com/perfect-panel/server/pkg/oauth/google"
-	"github.com/perfect-panel/server/pkg/random"
-	"github.com/perfect-panel/server/pkg/xerr"
+	"github.com/Js41313/Futuer-2/internal/model/auth"
+	"github.com/Js41313/Futuer-2/pkg/oauth/google"
+	"github.com/Js41313/Futuer-2/pkg/random"
+	"github.com/Js41313/Futuer-2/pkg/xerr"
 	"github.com/pkg/errors"
 	"golang.org/x/oauth2"
 
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/internal/types"
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/internal/types"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 )
 
 type BindOAuthLogic struct {

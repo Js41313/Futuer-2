@@ -1,6 +1,6 @@
 package order
 
-import "github.com/perfect-panel/server/internal/model/payment"
+import "github.com/Js41313/Futuer-2/internal/model/payment"
 
 func calculateFee(amount int64, config *payment.Payment) int64 {
 	var fee float64

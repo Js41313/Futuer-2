@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/perfect-panel/server/pkg/adapter/proxy"
+	"github.com/Js41313/Futuer-2/pkg/adapter/proxy"
 
-	"github.com/perfect-panel/server/pkg/uuidx"
+	"github.com/Js41313/Futuer-2/pkg/uuidx"
 )
 
 func TestBuildSurfboard(t *testing.T) {

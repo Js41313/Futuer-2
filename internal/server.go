@@ -8,18 +8,18 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 
-	"github.com/perfect-panel/server/pkg/proc"
-	"github.com/perfect-panel/server/pkg/trace"
+	"github.com/Js41313/Futuer-2/pkg/proc"
+	"github.com/Js41313/Futuer-2/pkg/trace"
 
+	"github.com/Js41313/Futuer-2/initialize"
+	"github.com/Js41313/Futuer-2/internal/handler"
+	"github.com/Js41313/Futuer-2/internal/middleware"
+	"github.com/Js41313/Futuer-2/internal/svc"
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-contrib/sessions/redis"
 	"github.com/gin-gonic/gin"
-	"github.com/perfect-panel/server/initialize"
-	"github.com/perfect-panel/server/internal/handler"
-	"github.com/perfect-panel/server/internal/middleware"
-	"github.com/perfect-panel/server/internal/svc"
 )
 
 type Service struct {

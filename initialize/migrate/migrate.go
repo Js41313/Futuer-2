@@ -4,10 +4,10 @@ import (
 	"embed"
 	"fmt"
 
+	"github.com/Js41313/Futuer-2/pkg/logger"
 	"github.com/golang-migrate/migrate/v4"
 	_ "github.com/golang-migrate/migrate/v4/database/mysql"
 	"github.com/golang-migrate/migrate/v4/source/iofs"
-	"github.com/perfect-panel/server/pkg/logger"
 )
 
 //go:embed database/*.sql

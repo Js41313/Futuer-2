@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/url"
 
-	"github.com/perfect-panel/server/pkg/logger"
-	"github.com/perfect-panel/server/pkg/tool"
+	"github.com/Js41313/Futuer-2/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/tool"
 	"github.com/pkg/errors"
 	"github.com/smartwalle/alipay/v3"
 )

@@ -1,16 +1,16 @@
 package handler
 
 import (
+	"github.com/Js41313/Futuer-2/internal/svc"
+	countrylogic "github.com/Js41313/Futuer-2/queue/logic/country"
+	orderLogic "github.com/Js41313/Futuer-2/queue/logic/order"
+	smslogic "github.com/Js41313/Futuer-2/queue/logic/sms"
+	"github.com/Js41313/Futuer-2/queue/logic/subscription"
+	"github.com/Js41313/Futuer-2/queue/logic/traffic"
+	"github.com/Js41313/Futuer-2/queue/types"
 	"github.com/hibiken/asynq"
-	"github.com/perfect-panel/server/internal/svc"
-	countrylogic "github.com/perfect-panel/server/queue/logic/country"
-	orderLogic "github.com/perfect-panel/server/queue/logic/order"
-	smslogic "github.com/perfect-panel/server/queue/logic/sms"
-	"github.com/perfect-panel/server/queue/logic/subscription"
-	"github.com/perfect-panel/server/queue/logic/traffic"
-	"github.com/perfect-panel/server/queue/types"
 
-	emailLogic "github.com/perfect-panel/server/queue/logic/email"
+	emailLogic "github.com/Js41313/Futuer-2/queue/logic/email"
 )
 
 func RegisterHandlers(mux *asynq.ServeMux, serverCtx *svc.ServiceContext) {

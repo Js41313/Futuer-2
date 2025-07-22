@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/perfect-panel/server/pkg/timex"
+	"github.com/Js41313/Futuer-2/pkg/timex"
 )
 
 const defaultRefreshInterval = time.Second

@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/perfect-panel/server/pkg/email/smtp"
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/pkg/email/smtp"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 )
 
 type Sender interface {

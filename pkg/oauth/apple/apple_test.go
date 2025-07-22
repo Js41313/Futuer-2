@@ -1,7 +1,6 @@
 package apple
 
 import (
-	"context"
 	"fmt"
 	"log"
 	"net/http"
@@ -31,21 +30,21 @@ func TestAppleLogin(t *testing.T) {
 	_ = router.RunTLS(":8443", "certificate.crt", "private.key")
 }
 
-func handleAppleCallBack(ctx context.Context, request CallbackRequest) {
+func handleAppleCallBack(c *gin.Context, request CallbackRequest) {
 	fmt.Printf("request: %+v\n", request)
 	// validate the token
 	client, err := New(Config{
-		TeamID:       TeamID,
-		ClientID:     ClientID,
-		KeyID:        KeyID,
-		ClientSecret: ClientSecret,
+		TeamID:       "",
+		ClientID:     "",
+		KeyID:        "",
+		ClientSecret: "",
 		RedirectURI:  "https://test.ppanel.dev:8443/auth/apple/callback",
 	})
 	if err != nil {
 		fmt.Println("error creating apple client: " + err.Error())
 		return
 	}
-	resp, err := client.VerifyWebToken(ctx, request.Code)
+	resp, err := client.VerifyWebToken(c, request.Code)
 	if err != nil {
 		fmt.Println("error verifying token: " + err.Error())
 		return

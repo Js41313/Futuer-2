@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/perfect-panel/server/pkg/sms/abosend"
-	"github.com/perfect-panel/server/pkg/sms/alibabacloud"
-	"github.com/perfect-panel/server/pkg/sms/smsbao"
-	"github.com/perfect-panel/server/pkg/sms/twilio"
+	"github.com/Js41313/Futuer-2/pkg/sms/abosend"
+	"github.com/Js41313/Futuer-2/pkg/sms/alibabacloud"
+	"github.com/Js41313/Futuer-2/pkg/sms/smsbao"
+	"github.com/Js41313/Futuer-2/pkg/sms/twilio"
 )
 
 type Sender interface {

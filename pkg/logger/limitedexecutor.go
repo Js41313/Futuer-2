@@ -4,8 +4,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/perfect-panel/server/pkg/syncx"
-	"github.com/perfect-panel/server/pkg/timex"
+	"github.com/Js41313/Futuer-2/pkg/syncx"
+	"github.com/Js41313/Futuer-2/pkg/timex"
 )
 
 type limitedExecutor struct {

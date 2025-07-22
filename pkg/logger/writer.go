@@ -11,9 +11,9 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"github.com/Js41313/Futuer-2/pkg/color"
+	"github.com/Js41313/Futuer-2/pkg/errorx"
 	fatihcolor "github.com/fatih/color"
-	"github.com/perfect-panel/server/pkg/color"
-	"github.com/perfect-panel/server/pkg/errorx"
 )
 
 type (

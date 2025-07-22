@@ -6,12 +6,12 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/perfect-panel/server/internal/model/user"
-	"github.com/perfect-panel/server/pkg/constant"
-	"github.com/perfect-panel/server/pkg/xerr"
+	"github.com/Js41313/Futuer-2/internal/model/user"
+	"github.com/Js41313/Futuer-2/pkg/constant"
+	"github.com/Js41313/Futuer-2/pkg/xerr"
 
-	"github.com/perfect-panel/server/internal/svc"
-	"github.com/perfect-panel/server/pkg/logger"
+	"github.com/Js41313/Futuer-2/internal/svc"
+	"github.com/Js41313/Futuer-2/pkg/logger"
 )
 
 type AppWsLogic struct {

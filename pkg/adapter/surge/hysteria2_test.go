@@ -3,7 +3,7 @@ package surge
 import (
 	"testing"
 
-	"github.com/perfect-panel/server/pkg/adapter/proxy"
+	"github.com/Js41313/Futuer-2/pkg/adapter/proxy"
 )
 
 func TestBuildHysteria2(t *testing.T) {
