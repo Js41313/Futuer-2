@@ -44,5 +44,6 @@ import (
 	"apis/app/payment.api"
 	"apis/app/document.api"
 	"apis/app/subscribe.api"
+	"apis/admin/game.api"
 )
 

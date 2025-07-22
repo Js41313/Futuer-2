@@ -1,0 +1,87 @@
+syntax = "v1"
+
+info (
+	title:   "Game Management API"
+	desc:    "API for game management in ppanel"
+	author:  "Tension"
+	email:   "tension@ppanel.com"
+	version: "0.0.1"
+)
+
+import "../types.api"
+
+type (
+	Game {
+		Id          int64  `json:"id"`
+		Icon        string `json:"icon"` // 游戏图标
+		Cover       string `json:"cover"` // 游戏封面
+		Name        string `json:"name"` // 游戏名称
+		Region      string `json:"region"` // 游戏区服
+		Process     string `json:"process"` // 游戏进程
+		Route       string `json:"route"` // 游戏路由
+		Description string `json:"description"` // 游戏描述
+		CreatedAt   int64  `json:"created_at"`
+		UpdatedAt   int64  `json:"updated_at"`
+	}
+	CreateGameRequest {
+		Icon        string `json:"icon"`
+		Cover       string `json:"cover"`
+		Name        string `json:"name"`
+		Region      string `json:"region"`
+		Process     string `json:"process"`
+		Route       string `json:"route"`
+		Description string `json:"description"`
+	}
+	UpdateGameRequest {
+		Id          int64  `json:"id"`
+		Icon        string `json:"icon"`
+		Cover       string `json:"cover"`
+		Name        string `json:"name"`
+		Region      string `json:"region"`
+		Process     string `json:"process"`
+		Route       string `json:"route"`
+		Description string `json:"description"`
+	}
+	DeleteGameRequest {
+		Id int64 `json:"id"`
+	}
+	GetGameListRequest {
+		Page   int    `form:"page"`
+		Size   int    `form:"size"`
+		Search string `form:"search,omitempty"`
+	}
+	GetGameListResponse {
+		Total int64  `json:"total"`
+		List  []Game `json:"list"`
+	}
+	GetGameDetailRequest {
+		Id int64 `form:"id"`
+	}
+)
+
+@server (
+	prefix:     v1/admin/game
+	group:      admin/game
+	middleware: AuthMiddleware
+)
+service ppanel {
+	@doc "Create Game"
+	@handler CreateGame
+	post / (CreateGameRequest)
+
+	@doc "Update Game"
+	@handler UpdateGame
+	put / (UpdateGameRequest)
+
+	@doc "Delete Game"
+	@handler DeleteGame
+	delete / (DeleteGameRequest)
+
+	@doc "Get Game List"
+	@handler GetGameList
+	get /list (GetGameListRequest) returns (GetGameListResponse)
+
+	@doc "Get Game Detail"
+	@handler GetGameDetail
+	get /detail (GetGameDetailRequest) returns (Game)
+}
