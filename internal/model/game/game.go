@@ -1,6 +1,10 @@
 package game
 
-import "time"
+import (
+	"time"
+
+	"gorm.io/gorm"
+)
 
 // Game 游戏实体
 

@@ -10,6 +10,7 @@ import (
 	adminConsole "github.com/Js41313/Futuer-2/internal/handler/admin/console"
 	adminCoupon "github.com/Js41313/Futuer-2/internal/handler/admin/coupon"
 	adminDocument "github.com/Js41313/Futuer-2/internal/handler/admin/document"
+	adminGame "github.com/Js41313/Futuer-2/internal/handler/admin/game"
 	adminLog "github.com/Js41313/Futuer-2/internal/handler/admin/log"
 	adminOrder "github.com/Js41313/Futuer-2/internal/handler/admin/order"
 	adminPayment "github.com/Js41313/Futuer-2/internal/handler/admin/payment"
@@ -520,6 +521,8 @@ func RegisterHandlers(router *gin.Engine, serverCtx *svc.ServiceContext) {
 		adminUserGroupRouter.GET("/subscribe/traffic_logs", adminUser.GetUserSubscribeTrafficLogsHandler(serverCtx))
 	}
 
+	registerAdminGameRoutes(router, serverCtx)
+
 	appAnnouncementGroupRouter := router.Group("/v1/app/announcement")
 	appAnnouncementGroupRouter.Use(middleware.AppMiddleware(serverCtx), middleware.AuthMiddleware(serverCtx))
 
@@ -941,4 +944,10 @@ func RegisterHandlers(router *gin.Engine, serverCtx *svc.ServiceContext) {
 		// Get user list
 		serverGroupRouter.GET("/user", server.GetServerUserListHandler(serverCtx))
 	}
+}
+
+// 注册游戏管理路由
+func registerAdminGameRoutes(rg *gin.Engine, serverCtx *svc.ServiceContext) {
+	adminGameGroupRouter := rg.Group("/v1/admin/game", middleware.AuthMiddleware(serverCtx))
+	adminGame.GameHandler(adminGameGroupRouter, serverCtx)
 }
