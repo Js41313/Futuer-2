@@ -11,51 +11,42 @@ info (
 import "../types.api"
 
 type (
-	Game {
-		Id          int64  `json:"id"`
-		Icon        string `json:"icon"` // 游戏图标
-		Cover       string `json:"cover"` // 游戏封面
-		Name        string `json:"name"` // 游戏名称
-		Region      string `json:"region"` // 游戏区服
-		Process     string `json:"process"` // 游戏进程
-		Route       string `json:"route"` // 游戏路由
-		Description string `json:"description"` // 游戏描述
-		CreatedAt   int64  `json:"created_at"`
-		UpdatedAt   int64  `json:"updated_at"`
-	}
 	CreateGameRequest {
 		Icon        string `json:"icon"`
 		Cover       string `json:"cover"`
-		Name        string `json:"name"`
+		Name        string `json:"name" validate:"required"`
 		Region      string `json:"region"`
 		Process     string `json:"process"`
 		Route       string `json:"route"`
 		Description string `json:"description"`
 	}
 	UpdateGameRequest {
-		Id          int64  `json:"id"`
+		Id          int64  `json:"id" validate:"required"`
 		Icon        string `json:"icon"`
 		Cover       string `json:"cover"`
-		Name        string `json:"name"`
+		Name        string `json:"name" validate:"required"`
 		Region      string `json:"region"`
 		Process     string `json:"process"`
 		Route       string `json:"route"`
 		Description string `json:"description"`
 	}
 	DeleteGameRequest {
-		Id int64 `json:"id"`
+		Id int64 `json:"id" validate:"required"`
 	}
 	GetGameListRequest {
-		Page   int    `form:"page"`
-		Size   int    `form:"size"`
+		Page   int    `form:"page" validate:"required"`
+		Size   int    `form:"size" validate:"required"`
 		Search string `form:"search,omitempty"`
 	}
 	GetGameListResponse {
-		Total int64  `json:"total"`
+		Total int64 `json:"total"`
 		List  []Game `json:"list"`
 	}
 	GetGameDetailRequest {
-		Id int64 `form:"id"`
+		Id int64 `form:"id" validate:"required"`
+	}
+	BatchDeleteGameRequest {
+		Ids []int64 `json:"ids" validate:"required"`
 	}
 )
 
@@ -65,6 +56,14 @@ type (
 	middleware: AuthMiddleware
 )
 service ppanel {
+	@doc "Get Game List"
+	@handler GetGameList
+	get /list (GetGameListRequest) returns (GetGameListResponse)
+
+	@doc "Get Game Detail"
+	@handler GetGameDetail
+	get /detail (GetGameDetailRequest) returns (Game)
+
 	@doc "Create Game"
 	@handler CreateGame
 	post / (CreateGameRequest)
@@ -77,11 +76,7 @@ service ppanel {
 	@handler DeleteGame
 	delete / (DeleteGameRequest)
 
-	@doc "Get Game List"
-	@handler GetGameList
-	get /list (GetGameListRequest) returns (GetGameListResponse)
-
-	@doc "Get Game Detail"
-	@handler GetGameDetail
-	get /detail (GetGameDetailRequest) returns (Game)
+	@doc "Batch delete Game"
+	@handler BatchDeleteGame
+	delete /batch (BatchDeleteGameRequest)
 }

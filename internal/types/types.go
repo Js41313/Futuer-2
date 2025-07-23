@@ -2314,3 +2314,47 @@ type WeeklyStat struct {
 	DayName string  `json:"day_name"`
 	Hours   float64 `json:"hours"`
 }
+
+type CreateGameRequest struct {
+	Icon        string `json:"icon"`
+	Cover       string `json:"cover"`
+	Name        string `json:"name" validate:"required"`
+	Region      string `json:"region"`
+	Process     string `json:"process"`
+	Route       string `json:"route"`
+	Description string `json:"description"`
+}
+
+type UpdateGameRequest struct {
+	Id          int64  `json:"id" validate:"required"`
+	Icon        string `json:"icon"`
+	Cover       string `json:"cover"`
+	Name        string `json:"name" validate:"required"`
+	Region      string `json:"region"`
+	Process     string `json:"process"`
+	Route       string `json:"route"`
+	Description string `json:"description"`
+}
+
+type DeleteGameRequest struct {
+	Id int64 `uri:"id" validate:"required"`
+}
+
+type GetGameListRequest struct {
+	Page   int    `form:"page" validate:"required"`
+	Size   int    `form:"size" validate:"required"`
+	Search string `form:"search,omitempty"`
+}
+
+type GetGameListResponse struct {
+	Total int64       `json:"total"`
+	List  interface{} `json:"list"`
+}
+
+type GetGameDetailRequest struct {
+	Id int64 `uri:"id" validate:"required"`
+}
+
+type BatchDeleteGameRequest struct {
+	Ids []int64 `json:"ids" validate:"required"`
+}

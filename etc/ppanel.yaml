@@ -6,7 +6,7 @@ TLS:
     KeyFile: ""
 Debug: false
 JwtAuth:
-    AccessSecret: f60a9b0b-d08f-48f6-b21b-07ba2483abb6
+    AccessSecret: 2657ef04-8580-42d3-bfaf-b26343906778
     AccessExpire: 604800
 Logger:
     ServiceName: PPanel
@@ -37,3 +37,6 @@ Redis:
     Host: 127.0.0.1:6379
     Pass: gogogo
     DB: 0
+Administrator:
+    Email: "admin@ppanel.dev"
+    Password: "password"

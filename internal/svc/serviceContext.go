@@ -14,6 +14,7 @@ import (
 	"github.com/Js41313/Futuer-2/internal/model/auth"
 	"github.com/Js41313/Futuer-2/internal/model/coupon"
 	"github.com/Js41313/Futuer-2/internal/model/document"
+	"github.com/Js41313/Futuer-2/internal/model/game"
 	"github.com/Js41313/Futuer-2/internal/model/log"
 	"github.com/Js41313/Futuer-2/internal/model/order"
 	"github.com/Js41313/Futuer-2/internal/model/payment"
@@ -41,6 +42,7 @@ type ServiceContext struct {
 	NodeCache             *cache.NodeCacheClient
 	AuthModel             auth.Model
 	AdsModel              ads.Model
+	GameModel             game.GameModel
 	LogModel              log.Model
 	UserModel             user.Model
 	OrderModel            order.Model
@@ -90,6 +92,7 @@ func NewServiceContext(c config.Config) *ServiceContext {
 		NodeCache:         cache.NewNodeCacheClient(rds),
 		AuthLimiter:       authLimiter,
 		AdsModel:          ads.NewModel(db, rds),
+		GameModel:         game.NewGameModel(db, rds),
 		LogModel:          log.NewModel(db),
 		AuthModel:         auth.NewModel(db, rds),
 		UserModel:         user.NewModel(db, rds),
